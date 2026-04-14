@@ -11,6 +11,20 @@
     
     <script src="https://unpkg.com/ml5@1.2.1/dist/ml5.min.js"></script>
 </head>
-<body>
-    <script src="script.js"></script>
+<body class="homepage">
+    <div class="dog-card">
+        <div id="dog-image-container">
+            <p id="loading-text">Scanning for a buddy...</p>
+        </div>
+        <div class="dog-info">
+            <h2 id="dog-name">TACO</h2>
+            <p id="dog-breed">Labrador, 1Y</p>
+            <p id="dog-gender">Male</p>
+        </div>
+    </div>
+
+    <script src="script.js">
+        p5.instance._setProperty('_isSafeFrame', true);
+    </script>
 </body>
+</html>
