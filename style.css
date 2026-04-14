@@ -34,13 +34,34 @@ h1 {
   color: rgb(56, 28, 13);
 }
 
-.entrybutton {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5em;
-  padding: 10px 20px;
-  background-color: rgb(56, 28, 13);
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
   color: rgb(249, 244, 244);
-  border: none;
-  border-radius: 5px;
+}
+
+.entrybutton {
+  padding: 12px 28px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(56, 28, 13);
+  border: 2px solid rgb(56, 28, 13); 
+  border-radius: 50%; /* This makes it a circle */
   cursor: pointer;
+  transition: all 0.3s ease; /* Smoothly fades the transparency */
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+a {
+    text-decoration: none;
+}
+
+/* The Hover State */
+.entrybutton:hover {
+  background-color: transparent;
+  color: rgb(56, 28, 13); /* Flip the text color so you can see it against the page background */
 }
